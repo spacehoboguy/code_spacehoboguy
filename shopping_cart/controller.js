@@ -20,7 +20,7 @@ function calculateSumOfCart (){
                         <td><u><b>Total </b></td>
                         <td></td>
                         <td></td>
-                        <td><b>${cartTotal}kr</b></u></td>
+                        <td><b class ="sumOfCart"><u>${cartTotal} kr</b></u></td>
                     </tr>`
     console.log(cartTotal)
 }

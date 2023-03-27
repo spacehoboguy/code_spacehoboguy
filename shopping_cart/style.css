@@ -23,7 +23,6 @@ table {
     /*  border: black solid 1px; */
     border-collapse: collapse;
     width: 80%;
-
 }
 
 tr:nth-child(even) {
@@ -32,4 +31,11 @@ tr:nth-child(even) {
 tr:last-child {
     border: 2px solid black;
     background-color: bisque;
+}
+b.sumOfCart {
+    text-decoration:underline;
+    border-bottom: 1px solid #000;
+}
+.numberOfItems {
+    text-align: center;
 }
