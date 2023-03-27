@@ -1,12 +1,15 @@
+let appState = {
+  currentView: "shopping_cart",
+  userType: "default"
+}
+
 let cartTotal = 0;
 let addedTotal;
-let cartTotalView = `<tr>
-                      <td><b>Total Price</b></td>
-                      <td></td>
-                      <td></td>
-                      <td ><b>${cartTotal} kr</b></td>
-                    </tr>`;
+let userView;
 
+let cartHtml;
+
+let cartTotalView;
 let storeContent = [
   {
     itemName: "Apple",
@@ -21,18 +24,18 @@ let storeContent = [
   {
     itemName: "Mango",
     itemPrice: 12,
-    noOfItems: 1, 
-  },  
+    noOfItems: 1,
+  },
   {
     itemName: "Pineapple",
     itemPrice: 20,
-    noOfItems: 1, 
-  },  
+    noOfItems: 1,
+  },
   {
     itemName: "Tangerine",
     itemPrice: 8,
-    noOfItems: 1, 
-  }  
+    noOfItems: 1,
+  }
 ]
 let shoppingCart = [
   {
@@ -48,16 +51,7 @@ let shoppingCart = [
   {
     itemName: "Mango",
     itemPrice: 12,
-    noOfItems: 1, 
-  },  
-  {
-    itemName: "Pineapple",
-    itemPrice: 20,
-    noOfItems: 1, 
-  },  
-  {
-    itemName: "Tangerine",
-    itemPrice: 8,
-    noOfItems: 1, 
-  }  
+    noOfItems: 1,
+  }
+  
 ]
