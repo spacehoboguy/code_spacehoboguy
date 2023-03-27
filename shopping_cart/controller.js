@@ -1,7 +1,7 @@
 
 function generateShoppingCartView() {
     let cartHtml =
-        `<h1>Fruit Basket</h1>
+        `<h1>:Your Fruit Basket</h1>
     <table>
     <tr>
     <th>Product</th>
@@ -11,9 +11,9 @@ function generateShoppingCartView() {
     </tr> `
 
     for (let i = 0; i < shoppingCart.length; i++) {
-        cartHtml +=`<tr>
+        cartHtml += `<tr>
                         <td>${shoppingCart[i].itemName}</td>
-                        <td class ="numberOfItems">${shoppingCart[i].noOfItems}</td>
+                        <td class ="numberOfItems"><button onclick ="decreaseItemAmount(${i})">-</button>${shoppingCart[i].noOfItems}<button onclick="increaseItemAmount(${i})">+</button></td>
                         <td>${shoppingCart[i].itemPrice} kr</td>
                         <td><b>${shoppingCart[i].noOfItems * shoppingCart[i].itemPrice} kr</b></td>
                     </tr>`
@@ -34,5 +34,18 @@ function calculateSumOfCart() {
                     `
     console.log(cartTotal)
     userView += cartTotalView
+    
+}
 
+function increaseItemAmount(itemIndex) {
+    shoppingCart[itemIndex].noOfItems++
+    updateView()
+}
+function decreaseItemAmount(itemIndex) {
+    if (shoppingCart[itemIndex].noOfItems > 1)
+        shoppingCart[itemIndex].noOfItems--
+    else {
+        shoppingCart.splice(itemIndex, 1)
+    }
+    updateView()
 }
