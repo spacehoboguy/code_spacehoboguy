@@ -4,33 +4,60 @@ let cartTotalView = `<tr>
                       <td><b>Total Price</b></td>
                       <td></td>
                       <td></td>
-                      <td><b>${cartTotal}kr</b></td>
+                      <td ><b>${cartTotal} kr</b></td>
                     </tr>`;
 
-let shoppingCart = [
+let storeContent = [
   {
-    itemName: "Eple",
+    itemName: "Apple",
     itemPrice: 10,
-    noOfItems: 3,
+    noOfItems: 1,
   },
   {
-    itemName: "Banan",
+    itemName: "Banana",
     itemPrice: 8,
-    noOfItems: 4,
+    noOfItems: 1,
   },
   {
     itemName: "Mango",
     itemPrice: 12,
-    noOfItems: 3, 
+    noOfItems: 1, 
   },  
   {
-    itemName: "Ananas",
+    itemName: "Pineapple",
     itemPrice: 20,
-    noOfItems: 2, 
+    noOfItems: 1, 
   },  
   {
-    itemName: "Mandarin",
+    itemName: "Tangerine",
     itemPrice: 8,
-    noOfItems: 3, 
+    noOfItems: 1, 
+  }  
+]
+let shoppingCart = [
+  {
+    itemName: "Apple",
+    itemPrice: 10,
+    noOfItems: 1,
+  },
+  {
+    itemName: "Banana",
+    itemPrice: 8,
+    noOfItems: 1,
+  },
+  {
+    itemName: "Mango",
+    itemPrice: 12,
+    noOfItems: 1, 
+  },  
+  {
+    itemName: "Pineapple",
+    itemPrice: 20,
+    noOfItems: 1, 
+  },  
+  {
+    itemName: "Tangerine",
+    itemPrice: 8,
+    noOfItems: 1, 
   }  
 ]
