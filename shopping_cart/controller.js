@@ -11,3 +11,16 @@ function drawShoppingCartTable(){
             </table>`;
     }
 }
+
+function calculateSumOfCart (){
+    for (let i = 0; i < shoppingCart.length; i++){
+        cartTotal += shoppingCart[i].noOfItems * shoppingCart[i].itemPrice;
+    }
+    cartTotalView = `<tr>
+                        <td><u><b>Total </b></td>
+                        <td></td>
+                        <td></td>
+                        <td><b>${cartTotal}kr</b></u></td>
+                    </tr>`
+    console.log(cartTotal)
+}
