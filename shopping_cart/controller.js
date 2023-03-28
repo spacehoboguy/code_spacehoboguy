@@ -1,7 +1,7 @@
 
 function generateShoppingCartView() {
     let cartHtml =
-        `<h1>:Your Fruit Basket</h1>
+    `<h1>:Your Fruit Basket</h1>
     <table>
     <tr>
     <th>Product</th>
@@ -22,6 +22,7 @@ function generateShoppingCartView() {
     document.getElementById("app").innerHTML = userView;
 }
 function calculateSumOfCart() {
+    cartTotal=0;
     for (let i = 0; i < shoppingCart.length; i++) {
         cartTotal += shoppingCart[i].noOfItems * shoppingCart[i].itemPrice;
     }
