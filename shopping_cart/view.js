@@ -14,3 +14,18 @@ function updateView() {
 
     document.getElementById("app").innerHTML = userView;
 }
+function updateStoreView() {
+
+    if (appState.currentView == "store") {
+        appState.currentView = "store";
+        
+        generateStoreView()
+       
+     
+    
+    } else {
+
+    }
+
+    document.getElementById("app").innerHTML = userView;
+}
