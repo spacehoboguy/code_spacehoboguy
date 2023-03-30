@@ -47,16 +47,19 @@ let shoppingCart = [
     itemName: "Apple",
     itemPrice: 10,
     noOfItems: 1,
+    itemSrc: "apple.jpg"
   },
   {
     itemName: "Banana",
     itemPrice: 8,
     noOfItems: 1,
+    itemSrc: "banana.jpg",
   },
   {
     itemName: "Mango",
     itemPrice: 12,
     noOfItems: 1,
+    itemSrc: "mango.jpg",
   }
   
 ]

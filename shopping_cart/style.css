@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+img {
+    max-width: 80px;
+    border-radius: 25%;
+    border: 1px solid black;
+}
 
 h1 {
     text-shadow: bisque 2px 2px 2px;
@@ -36,6 +41,7 @@ b.sumOfCart {
     text-decoration:underline;
     border-bottom: 1px solid #000;
 }
-.numberOfItems {
+td.numberOfItems {
+    justify-content: space-evenly;
     text-align: center;
 }

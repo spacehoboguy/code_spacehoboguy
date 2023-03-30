@@ -12,7 +12,7 @@ function generateShoppingCartView() {
 
     for (let i = 0; i < shoppingCart.length; i++) {
         cartHtml += `<tr>
-                        <td>${shoppingCart[i].itemName}</td>
+                        <td> <img src=${shoppingCart[i].itemSrc}></img>${shoppingCart[i].itemName}</td>
                         <td class ="numberOfItems"><button onclick ="decreaseItemAmount(${i})">-</button>${shoppingCart[i].noOfItems}<button onclick="increaseItemAmount(${i})">+</button></td>
                         <td>${shoppingCart[i].itemPrice} kr</td>
                         <td><b>${shoppingCart[i].noOfItems * shoppingCart[i].itemPrice} kr</b></td>
