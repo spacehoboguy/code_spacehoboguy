@@ -6,9 +6,7 @@ let appState = {
 let cartTotal = 0;
 let addedTotal;
 let userView;
-
 let cartHtml;
-
 let cartTotalView;
 let storeContent = [
   {
@@ -52,7 +50,7 @@ let shoppingCart = [
   {
     itemName: "Banana",
     itemPrice: 8,
-    noOfItems: 1,
+    noOfItems: 3,
     itemSrc: "banana.jpg",
   },
   {
