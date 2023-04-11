@@ -71,14 +71,16 @@ function generateStoreView() {
     let storeHtml = `
     <div class="menuBar">
         <div class="menuItem" onclick="changeView('home_store')">Home</div>
-        <div class="menuItem" onclick="changeView('home_store')">Menu</div>
+        <div class="menuItem" onclick="changeView('about')">About</div>
         <div class="menuItem" onclick="changeView('shopping_cart')">Fruit Basket</div>
     </div>
     <div class="itemGrid">`;
-    
+
     for (let i = 0; i < storeContent.length; i++) {
         storeHtml += `<div class="itemCard" onclick="addToCart(${i})">
-            <div class="itemImage"><img class="itemImage" src="${storeContent[i].itemSrc}" width="600"></div>
+            <div>
+            <img class="itemImage" src="${storeContent[i].itemSrc}" width="600">
+            </div>
             <div class="itemName">${storeContent[i].itemName}</div>
             <div class="itemPrice"></div>
         </div> `;
@@ -88,8 +90,8 @@ function generateStoreView() {
     console.log(appState.currentView)
     document.getElementById("app").innerHTML = userView;
 }
-function addToCart (addedItemIndex){
+function addToCart(addedItemIndex) {
     let itemToPush = storeContent[addedItemIndex];
     shoppingCart.push(itemToPush)
-    console.log(itemToPush,"<-Item to push")
+    console.log(itemToPush, "<-Item to push")
 }

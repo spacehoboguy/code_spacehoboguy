@@ -85,8 +85,8 @@ cursor: pointer;
 }
 .itemImage {
     max-width: 65px;
-    mix-blend-mode: color-burn;
 }
+
 .cartImage {
     max-width: 20vh;
     border-radius: 25%;
@@ -94,6 +94,7 @@ cursor: pointer;
     
 }
 .itemCard:hover {
-    background-color: rgb(255, 217, 147);
-
+    /* background-color: rgb(255, 217, 147); */
+    cursor: pointer;
+    user-select: none;
 }
