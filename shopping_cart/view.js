@@ -1,16 +1,17 @@
 updateView()
 function updateView() {
 
-    if (appState.currentView == "shopping_cart") {
-        appState.currentView = "shopping_cart";
+    if (appState.currentView == 'shopping_cart') {
         
+
         generateShoppingCartView()
         calculateSumOfCart()
         cartHtml += cartTotalView
-    
-    } else {
 
+    } else if (appState.currentView == 'home_store') {
+        
+        generateStoreView()
+       
     }
-
-    document.getElementById("app").innerHTML = userView;
 }
+

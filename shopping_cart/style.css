@@ -1,9 +1,12 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+ 
+    
 }
 
+
 h1 {
-    text-shadow: bisque 2px 2px 2px;
+    text-shadow: orange  1px 4px 4px;
 }
 
 td {
@@ -16,17 +19,18 @@ th {
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding: 8px;
-    background-color: bisque;
+    background-color: orange;
 }
 
 table {
     /*  border: black solid 1px; */
+    
     border-collapse: collapse;
     width: 60%;
 }
 
 tr:nth-child(even) {
-    background-color: rgb(252, 244, 234);
+    background-color:  rgb(251, 212, 138);
 }
 tr:nth-child {
     border: 2px solid black;
@@ -36,6 +40,61 @@ b.sumOfCart {
     text-decoration:underline;
     border-bottom: 1px solid #000;
 }
-.numberOfItems {
+td.numberOfItems {
+    justify-content: space-evenly;
     text-align: center;
+}
+.totalSum {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+}
+.menuBar {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.menuItem {
+    font-weight: 600;
+    font-size: xx-large;
+    user-select: none;
+}
+.menuItem:hover {
+text-shadow: orange  1px 4px 4px;
+cursor: pointer;
+}
+.menuItem:active {
+    color: white;
+}
+.itemGrid {
+    display: flex;
+    grid-template: repeat(3,3);
+    grid-column: 2;
+}
+.itemCard {
+    height: 150px;
+    width: 100px;
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 15%;
+    justify-content: space-between;
+    background-color: orange;
+}
+.itemImage {
+    max-width: 65px;
+}
+
+.cartImage {
+    max-width: 20vh;
+    border-radius: 25%;
+    border: 1px solid black;
+    
+}
+.itemCard:hover {
+    /* background-color: rgb(255, 217, 147); */
+    cursor: pointer;
+    user-select: none;
 }
